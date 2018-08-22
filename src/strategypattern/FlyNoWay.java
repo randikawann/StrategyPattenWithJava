@@ -9,17 +9,10 @@ package strategypattern;
  *
  * @author randikawann
  */
-public class RubberDuck extends Duck  {
+public class FlyNoWay implements FlyBehaviour {
 
-    public RubberDuck(){
-        flyBehaviour = new FlyNoWay();
-        quackBehaviour=new MuteQuack();
+    @Override
+    public void fly() {
+        System.out.println("i cant fly");
     }
-
-    public void display(){
-        System.out.println("Hi my appearance is like a Rubber Duck");
-    }
-
-
-
 }

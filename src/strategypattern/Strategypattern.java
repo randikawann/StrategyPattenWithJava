@@ -26,32 +26,12 @@ public class Strategypattern {
 
     public static void play(Duck [] ducks){
         for (Duck duck: ducks) {
-
-           
-
             duck.display();
-            chooseDuckType(duck);
             duck.swim();
+            duck.performFly();
+            duck.performQuack();
             duck.fly();
-            System.out.println(" ");
-            System.out.println(" ");
         }
     }
 
-    public static void chooseDuckType(Duck duck){
-
-
-        if(duck instanceof MallardDuck){
-            MallardDuck ducky = (MallardDuck) duck;
-            ducky.fly();
-            ducky.quack();
-
-        }
-        if(duck instanceof RedHeadDuck){
-
-            RedHeadDuck ducky = (RedHeadDuck) duck;
-            ducky.fly();
-            ducky.quack();
-        }
-    }
 }
