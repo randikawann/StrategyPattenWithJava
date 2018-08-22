@@ -12,8 +12,8 @@ package strategypattern;
 public class RedHeadDuck extends Duck implements Flyable,Quackable {
 
     public void display(){
-        System.out.println("Hi my appearance is like a RedHeadDuck");
-    }
+        System.out.println("Hi my appearance is like a RedHead Duck");
+   }
 
     @Override
     public void fly() {
