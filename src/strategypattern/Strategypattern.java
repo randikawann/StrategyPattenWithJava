@@ -30,8 +30,7 @@ public class Strategypattern {
             duck.swim();
             duck.performFly();
             duck.performQuack();
-            System.out.println(" ");
-            System.out.println(" ");
+            duck.fly();
         }
     }
 

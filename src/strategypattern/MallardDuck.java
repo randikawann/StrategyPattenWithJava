@@ -20,6 +20,10 @@ public class MallardDuck extends Duck {
         System.out.println("Hi my appearance is like a MallardDuck");
     }
 
-
-
+    @Override
+    public void quack() {
+        System.out.println("i can quack");
+        System.out.println("Hi my appearance is like a Mallard Duck");
+        
+    }
 }
