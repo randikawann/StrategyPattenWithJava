@@ -13,7 +13,7 @@ public class DecoyDuck extends Duck{
 
     @Override
     public void display() {
-        System.out.println("Hi my appearance is like a Rubber Duck");
+        System.out.println("Hi my appearance is like a Decoy Duck");
     }
 
     @Override
