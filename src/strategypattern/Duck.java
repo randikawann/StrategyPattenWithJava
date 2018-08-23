@@ -11,6 +11,10 @@ package strategypattern;
  */
 public abstract class Duck {
 
+    protected FlyBehaviour flyBehaviour;
+
+    protected QuackBehaviour quackBehaviour;
+
     //The swimming Property of the Duck
 
     public void swim(){
@@ -19,5 +23,22 @@ public abstract class Duck {
 
     //An abstract Property of the Duck which should be implemented by each duck individually
     public abstract void display();
+
+    public void performQuack(){
+        quackBehaviour.quack();
+    }
+
+    public void performFly(){
+        flyBehaviour.fly();
+    }
+    
+    public void setFlyBehaviour(FlyBehaviour flyBehaviour){
+        this.flyBehaviour=flyBehaviour;
+
+    }
+
+    public void setQuackBehaviour(QuackBehaviour quackBehaviour) {
+        this.quackBehaviour = quackBehaviour;
+    }
 
 }
