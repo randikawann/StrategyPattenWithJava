@@ -32,6 +32,7 @@ public class Strategypattern {
             duck.display();
             chooseDuckType(duck);
             duck.swim();
+            duck.fly();
             System.out.println(" ");
             System.out.println(" ");
         }

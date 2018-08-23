@@ -23,5 +23,7 @@ public class MallardDuck extends Duck implements Flyable,Quackable{
     @Override
     public void quack() {
         System.out.println("i can quack");
+        System.out.println("Hi my appearance is like a Mallard Duck");
+        
     }
 }
