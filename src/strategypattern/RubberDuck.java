@@ -9,19 +9,15 @@ package strategypattern;
  *
  * @author randikawann
  */
-public class RubberDuck extends Duck {
+public class RubberDuck extends Duck implements Quackable {
 
     public void display(){
         System.out.println("Hi my appearance is like a Rubber Duck");
     }
 
-    @Override
-    public void fly() {
-        System.out.println("I cannot fly");
-    }
 
     @Override
     public void quack() {
-        System.out.println("i cannot quak");
+        System.out.println("i can quack");
     }
 }

@@ -9,12 +9,7 @@ package strategypattern;
  *
  * @author randikawann
  */
-public class DecoyDuck extends Duck{
+public interface Quackable {
 
-    @Override
-    public void display() {
-        System.out.println("Hi my appearance is like a Decoy Duck");
-    }
-
-
+    public void quack();
 }
