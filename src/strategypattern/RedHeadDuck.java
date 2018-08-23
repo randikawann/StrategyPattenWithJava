@@ -12,6 +12,6 @@ package strategypattern;
 public class RedHeadDuck extends Duck {
 
     public void display(){
-        System.out.println("Hi my appearance is like a Mallard Duck");
+        System.out.println("Hi my appearance is like a RedHead Duck");
     }
 }
