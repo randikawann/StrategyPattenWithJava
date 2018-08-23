@@ -10,11 +10,13 @@ package strategypattern;
  * @author randikawann
  */
 public class Strategypattern {
-public static void main(String[] args) {
+ public static void main(String[] args) {
         // created the duck instances
-        Duck [] ducks = new Duck[2];
+        Duck [] ducks = new Duck[3];
         ducks[0]=new MallardDuck();
         ducks[1]= new RedHeadDuck();
+        ducks[2]=new RubberDuck();
+
 
         play(ducks);
 
@@ -26,9 +28,9 @@ public static void main(String[] args) {
             duck.display();
             duck.quack();
             duck.swim();
+            duck.fly();
             System.out.println(" ");
             System.out.println(" ");
         }
     }
-    
 }

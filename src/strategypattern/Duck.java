@@ -22,6 +22,10 @@ public abstract class Duck {
     public void swim(){
         System.out.println("I can swim");
     }
+    
+      public void fly(){
+        System.out.println("I can Fly");
+    }
 
     //An abstract Property of the Duck which should be implemented by each duck individually
     public abstract void display();
